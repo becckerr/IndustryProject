@@ -73,6 +73,10 @@ public class Sight : MonoBehaviour
         {
             isHidden = true;
         }
+        if (other.gameObject.CompareTag("ShutterShadow"))
+        {
+            isHidden = true;
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -83,6 +87,11 @@ public class Sight : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("Shadow"))
+        {
+            isHidden = false;
+        }
+
+        if (other.gameObject.CompareTag("ShutterShadow"))
         {
             isHidden = false;
         }

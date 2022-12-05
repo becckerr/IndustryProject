@@ -27,6 +27,7 @@ TagManager:
   - Powercellholder8
   - Powercellholder9
   - Powercell10
+  - ShutterShadow
   layers:
   - Default
   - TransparentFX
