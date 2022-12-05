@@ -25,10 +25,12 @@ public class GameManager : MonoBehaviour
         Init();
     }
 
-    // Update is called once per frame
     void Init()
     {
-        
+        if (SceneManager.GetActiveScene().name != "Scene01")
+        {
+            SceneManager.LoadScene("Scene01");
+        }
     }
 
     void Start()
