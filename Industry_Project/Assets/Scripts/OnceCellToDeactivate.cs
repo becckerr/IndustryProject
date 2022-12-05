@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OneCellToAct : MonoBehaviour
+public class OnceCellToDeactivate : MonoBehaviour
 {
     public GameObject Powercell;
 
@@ -12,11 +12,11 @@ public class OneCellToAct : MonoBehaviour
     {
         if (Powercell.activeSelf)
         {
-            Obj.SetActive(false);
+            Obj.SetActive(true);
         }
         if (!Powercell.activeSelf)
         {
-            Obj.SetActive(true);
+            Obj.SetActive(false);
         }
     }
 }
