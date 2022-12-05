@@ -4,44 +4,92 @@ using UnityEngine;
 
 public class Sight : MonoBehaviour
 {
-    public int seen;
+    public float seen = 0f;
 
-    public bool hidden;
+    public bool isBeingSeen = false;
+    public bool isHidden = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        seen = 0;
-
-        hidden = false;
+        seen = 0f;
+        isBeingSeen = false;
+        isHidden = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        ControlSeen();
 
+        if(seen < 0f)
+        {
+            seen = 0f;
+        }
+    }
+
+    void ControlSeen()
+    {
+        if(isBeingSeen && !isHidden)
+        {
+            seen += 0.5f;
+        }
+        if(seen > 0f)
+        {
+            if(!isBeingSeen && isHidden)
+            {
+                seen -= 0.3f;
+            }
+            else if(isBeingSeen && isHidden)
+            {
+                seen -= 0.3f;
+            }
+            else if(!isBeingSeen && !isHidden)
+            {
+                seen -= 0.3f;
+            }
+        }
     }
 
 
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.CompareTag("AlienSight"))
+        {
+            isBeingSeen = true;
+        }
+        else if(!other.gameObject.CompareTag("AlienSight"))
+        {
+            isBeingSeen = false;
+        }
+        else
+        {
+            isBeingSeen = false;
+        }
+    }
+
+    void OnTriggerEnter(Collider other) 
     {
         if(other.gameObject.CompareTag("Shadow"))
         {
-            hidden = true;
-        }
-
-        if (other.gameObject.CompareTag("AlienSight")&&!hidden)
-        {
-            seen += 1;
+            isHidden = true;
         }
     }
+
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Shadow"))
+        if (other.gameObject.CompareTag("AlienSight"))
         {
-            hidden = false;
+            isBeingSeen = false;
+        }
+
+        if(other.gameObject.CompareTag("Shadow"))
+        {
+            isHidden = false;
         }
     }
+
 }
