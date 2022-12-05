@@ -15,6 +15,7 @@ public class PowerCells : MonoBehaviour
     public GameObject Powercell7;
     public GameObject Powercell8;
     public GameObject Powercell9;
+    public GameObject Powercell10;
 
     void Start()
     {
@@ -318,6 +319,16 @@ public class PowerCells : MonoBehaviour
                             Powercell9.SetActive(true);
                         }
                     }
+                }
+
+                if ((hit.transform.tag == "Powercell10"))
+                {
+                        if (Powercell10.activeSelf)
+                        {
+                            GameManager.PCCount = +1;
+
+                            Powercell10.SetActive(false);
+                        }
                 }
             }
         }
