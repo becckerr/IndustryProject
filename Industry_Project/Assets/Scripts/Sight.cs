@@ -23,10 +23,7 @@ public class Sight : MonoBehaviour
     {
         ControlSeen();
 
-        if (seen < 0f)
-        {
-            seen = 0f;
-        }
+        seen = Mathf.Clamp(seen, 0, 300);
     }
 
     void ControlSeen()

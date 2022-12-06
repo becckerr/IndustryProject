@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
 
     void Init()
     {
+
+        Cursor.visible = false;
+        
         if (SceneManager.GetActiveScene().name != "Scene01")
         {
             SceneManager.LoadScene("Scene01");
