@@ -14,7 +14,7 @@ public class OneCellToAct : MonoBehaviour
         {
             Obj.SetActive(false);
         }
-        else if (!Powercell.activeSelf)
+        if (!Powercell.activeSelf)
         {
             Obj.SetActive(true);
         }

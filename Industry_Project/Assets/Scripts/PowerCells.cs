@@ -15,6 +15,7 @@ public class PowerCells : MonoBehaviour
     public GameObject Powercell7;
     public GameObject Powercell8;
     public GameObject Powercell9;
+    public GameObject Powercell10;
 
     void Start()
     {
@@ -38,7 +39,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell1.activeSelf)
                         {
-                            GameManager.PCCount =+ 1;
+                            GameManager.PCCount += 1;
 
                             Powercell1.SetActive(false);
                         }
@@ -51,13 +52,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell1.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell1.SetActive(false);
                         }
                         else if (!Powercell1.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell1.SetActive(true);
                         }
@@ -70,7 +71,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell2.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell2.SetActive(false);
                         }
@@ -83,13 +84,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell2.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell2.SetActive(false);
                         }
                         else if (!Powercell2.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell2.SetActive(true);
                         }
@@ -102,7 +103,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell3.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell3.SetActive(false);
                         }
@@ -115,13 +116,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell3.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell3.SetActive(false);
                         }
                         else if (!Powercell3.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell3.SetActive(true);
                         }
@@ -134,7 +135,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell4.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell4.SetActive(false);
                         }
@@ -147,13 +148,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell4.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell4.SetActive(false);
                         }
                         else if (!Powercell4.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell4.SetActive(true);
                         }
@@ -166,7 +167,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell5.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell5.SetActive(false);
                         }
@@ -179,13 +180,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell5.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell5.SetActive(false);
                         }
                         else if (!Powercell5.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell5.SetActive(true);
                         }
@@ -198,7 +199,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell6.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell6.SetActive(false);
                         }
@@ -211,13 +212,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell6.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell6.SetActive(false);
                         }
                         else if (!Powercell6.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell6.SetActive(true);
                         }
@@ -230,7 +231,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell7.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell7.SetActive(false);
                         }
@@ -243,13 +244,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell7.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell7.SetActive(false);
                         }
                         else if (!Powercell7.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell7.SetActive(true);
                         }
@@ -262,7 +263,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell8.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell8.SetActive(false);
                         }
@@ -275,13 +276,13 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell8.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell8.SetActive(false);
                         }
                         else if (!Powercell8.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell8.SetActive(true);
                         }
@@ -294,7 +295,7 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell9.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell9.SetActive(false);
                         }
@@ -307,17 +308,27 @@ public class PowerCells : MonoBehaviour
                     {
                         if (Powercell9.activeSelf)
                         {
-                            GameManager.PCCount = +1;
+                            GameManager.PCCount += 1;
 
                             Powercell9.SetActive(false);
                         }
                         else if (!Powercell9.activeSelf)
                         {
-                            GameManager.PCCount = -1;
+                            GameManager.PCCount -= 1;
 
                             Powercell9.SetActive(true);
                         }
                     }
+                }
+
+                if ((hit.transform.tag == "Powercell10"))
+                {
+                        if (Powercell10.activeSelf)
+                        {
+                            GameManager.PCCount += 1;
+
+                            Powercell10.SetActive(false);
+                        }
                 }
             }
         }
