@@ -9,6 +9,8 @@ public class PlayDemo : MonoBehaviour
     {
         SceneManager.LoadScene("Scene02");
 
+        Cursor.visible = false;
+
         Debug.Log("Playing");
     }
 }

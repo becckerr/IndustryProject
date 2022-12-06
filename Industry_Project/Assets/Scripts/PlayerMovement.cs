@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    public AudioSource footstep;
+
     // Update is called once per frame
     void Update()
     {
@@ -38,5 +40,37 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if (Input.GetButton("Vertical"))
+        {
+            if (!footstep.isPlaying)
+            {
+                footstep.Play();
+            }
+        }
+
+        if (!Input.GetButton("Vertical") & !Input.GetButton("Horizontal"))
+        {
+            if (footstep.isPlaying)
+            {
+                footstep.Stop();
+            }
+        }
+
+        if (Input.GetButton("Horizontal"))
+        {
+            if (!footstep.isPlaying)
+            {
+                footstep.Play();
+            }
+        }
+
+        if (!Input.GetButton("Horizontal") & !Input.GetButton("Vertical"))
+        {
+            if (footstep.isPlaying)
+            {
+                footstep.Stop();
+            }
+        }
     }
 }
