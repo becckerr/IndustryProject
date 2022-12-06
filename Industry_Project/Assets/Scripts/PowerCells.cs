@@ -24,7 +24,7 @@ public class PowerCells : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 
         if (Input.GetMouseButtonDown(0))
         {
