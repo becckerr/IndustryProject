@@ -27,9 +27,9 @@ public class GameManager : MonoBehaviour
 
     void Init()
     {
-        if (SceneManager.GetActiveScene().name != "Scene01")
+        if (SceneManager.GetActiveScene().name != "Scene001")
         {
-            SceneManager.LoadScene("Scene01");
+            SceneManager.LoadScene("Scene001");
         }
     }
 
