@@ -8,26 +8,10 @@ TagManager:
   - AlienSight
   - CellHolder
   - PowerCell
-  - Powercell1
-  - Powercell2
-  - Powercell3
-  - Powercell4
-  - Powercell5
-  - Powercell6
-  - Powercell7
-  - Powercell8
-  - Powercell9
-  - Powercellholder1
-  - Powercellholder2
-  - Powercellholder3
-  - Powercellholder4
-  - Powercellholder5
-  - Powercellholder6
-  - Powercellholder7
-  - Powercellholder8
-  - Powercellholder9
   - Powercell10
   - ShutterShadow
+  - Lit Floor
+  - PCHolder
   layers:
   - Default
   - TransparentFX
